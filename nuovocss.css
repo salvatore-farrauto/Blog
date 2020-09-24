@@ -1,0 +1,17 @@
+H1{
+    text-shadow: 3px 3px 3px #FF0000;
+}
+
+body{
+	background:url(immagine.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+h1 {color: green;
+	text-align:center;
+	font-size:50;
+	background-color:black;
+	}
