@@ -1,5 +1,13 @@
-H1{
+h1{
     text-shadow: 3px 3px 3px #FF0000;
+}
+
+h1{ 
+	color: red;
+	text-align:center;
+	font-size: 80;
+	
+	
 }
 
 body{
@@ -8,10 +16,18 @@ body{
 	background-repeat: no-repeat;
 }
 
+.carousel {
+  width:640px;
+  height:360px;
+}
 
+.container{
+	
+  position: relative;
+  top: -300px;
+  left: 800px;
 
-h1 {color: green;
-	text-align:center;
-	font-size:50;
-	background-color:black;
-	}
+}
+
+	
+}
