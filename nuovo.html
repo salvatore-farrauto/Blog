@@ -105,7 +105,7 @@
     </div>
   </div>
 
-  <h2>Chicche recenti</h2>
+  <h2>Cose recenti</h2>
 
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
@@ -176,24 +176,55 @@
     </div>
   </div>
 
-  <hr>
 
-    <div class="col-md-4">
-      <a class="btn btn-lg btn-secondary btn-block" href="#">Contattaci</a>
-    </div>
-  </div>
+<footer class="px-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control comment-text" 
+                            placeholder="Commenta" 
+                            aria-label="Commenta" 
+                            aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary send-comment" type="button">invia</button>
+                            </div>
+                          </div>
 
-</div>
+                          <ul class="list-group list-group-flush comments-container">
+                                <!-- add dinamically 
+                                <li class="list-group-item">Comment text</li>
+    
+                                -->
+                          </ul>
 
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Nerd 2020</p>
-  </div>
-</footer>
+                    </footer>
+
+
+		
+		
+		
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		
+	<script>  
+			$(document).ready(function () {
+
+				var users = [
+					'mario', 'francesco', 'alberto', 'claudia'
+				]
+
+			$(".send-comment").click(function () {
+				var commentText = $(".comment-text").val();
+
+				var commentContainer = $(".comments-container");
+				var commentRow = '<li class="list-group-item"><a href="#" class="badge badge-light">' + users[Math.round(Math.random(0, 3))
+				] + '</a>' + commentText + '</li>';
+
+				commentContainer.append(commentRow);
+
+			});
+
+			});
+	</script>
+
 	</body>
 </html>
